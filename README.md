@@ -27,8 +27,8 @@ This project depends on:
 
 
 ```bash
-git clone https://github.com/Ciaran-DalCais/QEC.git
-mkdir external && cd external 
+git clone https://github.com/Ciaran-DalCais/Quantum-Error-Correction.git
+mkdir external && cd external && mkdir QuEST && cd QuEST 
 git clone https://github.com/QuEST-Kit/QuEST.git    
 --------------------------------------
 
@@ -37,10 +37,9 @@ git clone https://github.com/QuEST-Kit/QuEST.git
 From the project root: 
 
 ```bash
-mkdir build
-cd build
-cmake ..
-cmake --build .
+
+cmake -S . -B build
+cmake --build build
 
 ---------------------------------------
 
@@ -68,4 +67,5 @@ QEC/
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
+
 
